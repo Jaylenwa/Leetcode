@@ -36,7 +36,8 @@ public class QuickSort {
     }
 
     public static int getIndex(int[] arr, int low, int high) {
-
+//                       4
+        //int[] arr = {4, 5, 1, 6, 2, 7, 3, 8};
         //暂存基准数据
         int temp = arr[low];
 

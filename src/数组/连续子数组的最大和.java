@@ -32,9 +32,6 @@ public class 连续子数组的最大和 {
                 nums[i] = nums[i] + nums[i - 1];
                 res = Math.max(res,nums[i]);
             }
-
-//            nums[i] += Math.max(nums[i - 1] , 0 );
-//            res = Math.max(nums[i],res);
         }
 
         return res;

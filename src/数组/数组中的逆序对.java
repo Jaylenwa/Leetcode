@@ -4,7 +4,7 @@ package 数组;
  * @author WJL
  * @date: 2021/08/03 12:13
  * 数组中的逆序对
- *
+ * <p>
  * 解题思路 先给数组归并排序 在合并的过程中,计算arr[i] > arr[j]的对数
  **/
 
@@ -14,7 +14,7 @@ public class 数组中的逆序对 {
 
     public static void main(String[] args) {
         数组中的逆序对 test = new 数组中的逆序对();
-        int[] arr = {3,4,1,2,9,1,1,3,4,1,2,9,1,1,3};
+        int[] arr = {3, 4, 1, 2, 9, 1, 1, 3, 4, 1, 2, 9, 1, 1, 3};
 
         int i = test.reversePairs(arr);
         System.out.println(i);

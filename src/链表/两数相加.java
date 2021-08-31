@@ -1,19 +1,26 @@
 package 链表;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * @author WJL
  * @date: 2021/08/11 15:48
+ *
  **/
 
 public class 两数相加 {
 
     public static void main(String[] args) {
+
         ListNode listNode = ListNode.getListNode();
         ListNode node = addTwoNumbers(listNode,listNode);
         while (node != null) {
             System.out.println(node.val);
             node = node.next;
         }
+
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {

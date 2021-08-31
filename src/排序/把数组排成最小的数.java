@@ -14,13 +14,13 @@ public class 把数组排成最小的数 {
      * 排序规则
      * 若拼接字符串 x + y > y + xx+y>y+x ，则 xx “大于” yy ；
      * 反之，若 x + y < y + xx+y<y+x ，则 xx “小于” yy ；、
-     *
+     * <p>
      * 核心思想 ： 修改比较方法
      */
 
     public static void main(String[] args) {
         把数组排成最小的数 tep = new 把数组排成最小的数();
-        int[] arr = {0,1};
+        int[] arr = {0, 1};
         String s = tep.minNumber(arr);
 
         System.out.println(s);
@@ -53,7 +53,7 @@ public class 把数组排成最小的数 {
     }
 
 
-    //  1 2 3 4 5 3 6
+    //   2 3 4 5 3 6
     private static int getIndex(String[] arr, int low, int high) {
         String temp = arr[low];
 

@@ -14,10 +14,13 @@ public class Z字形变换 {
 
 
     public static void main(String[] args) {
-        String s = "AB";
 
-        String convert = convert(s,1);
-        System.out.println(convert);
+        Integer integer = new Integer(289422222);
+
+        Long l = new Long(integer);
+        System.out.println(l);
+
+
     }
 
     public static String convert(String s, int numRows) {
@@ -26,7 +29,7 @@ public class Z字形变换 {
 
         List<StringBuilder> list = new ArrayList<>();
 
-        //s的遍历顺序是list的0-list.length - 1循环
+        //s的遍历顺序是list的0 到 list.length - 1循环
         for (int i = 0; i < numRows; i++) {
             list.add(new StringBuilder());
         }

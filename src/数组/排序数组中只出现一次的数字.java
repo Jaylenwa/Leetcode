@@ -6,18 +6,17 @@ import java.util.Map;
 /**
  * @author WJL
  * @date: 2021/08/06 11:15
- *
- *  排序数组中只出现一次的数字
- *
- *  给定一个只包含整数的有序数组 nums ，每个元素都会出现两次，唯有一个数只会出现一次，请找出这个唯一的数字。
- *
+ * <p>
+ * 排序数组中只出现一次的数字
+ * <p>
+ * 给定一个只包含整数的有序数组 nums ，每个元素都会出现两次，唯有一个数只会出现一次，请找出这个唯一的数字。
  **/
 
 public class 排序数组中只出现一次的数字 {
 
     public static void main(String[] args) {
 
-        int[] arr = {1,1, 3, 3,4};
+        int[] arr = {1, 1, 3, 3, 4};
         int i = singleNonDuplicate1(arr);
         System.out.println(i);
     }
@@ -30,10 +29,10 @@ public class 排序数组中只出现一次的数字 {
         int i = 0;
         int j = 1;
         while (nums[i] == nums[j]) {
-            if (j < nums.length - 2){
+            if (j < nums.length - 2) {
                 i = j + 1;
                 j = i + 1;
-            }else {
+            } else {
                 return nums[j + 1];
             }
         }
